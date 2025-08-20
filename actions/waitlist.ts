@@ -1,8 +1,10 @@
 "use server";
 
-import { EstablishmentEmployees } from "@/lib/generated/prisma";
+import {
+  EstablishmentEmployees,
+  EstablishmentType,
+} from "@/lib/generated/prisma";
 import prisma from "@/lib/prisma";
-import { EstablishmentType } from "@prisma/client";
 
 export type WaitlistForm = {
   name: string;
