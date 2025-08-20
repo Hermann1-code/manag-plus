@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Manag+",
     images: [
       {
-        url: "https://managplus.vercel.app/images/og-image.png",
+        url: "https://managplus.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Manag+ - Politique de confidentialite",
