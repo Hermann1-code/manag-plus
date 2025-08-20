@@ -26,10 +26,7 @@ import {
   Phone,
 } from "lucide-react";
 import { addToWaitlist, WaitlistForm } from "@/actions/waitlist";
-import {
-  EstablishmentEmployees,
-  EstablishmentType,
-} from "@/lib/generated/prisma";
+import { EstablishmentEmployees, EstablishmentType } from "@prisma/client";
 import { toast } from "sonner";
 import Image from "next/image";
 import Link from "next/link";
