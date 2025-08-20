@@ -22,7 +22,7 @@ export const metadata = {
     siteName: "Manag+",
     images: [
       {
-        url: "https://manag-plus.vercel.app/images/og-image.png",
+        url: "https://managplus.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Manag+ - Gerer votre etablissement sans stress",
@@ -43,7 +43,7 @@ export const metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "https://manag-plus.vercel.app/images/og-image.png",
+        url: "https://managplus.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Manag+ - Gerer votre etablissement sans stress",

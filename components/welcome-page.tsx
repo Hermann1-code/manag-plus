@@ -219,112 +219,13 @@ const ManagPlusLanding = () => {
             {/* Right Content - Mockups */}
             <div className="relative flex justify-center">
               {/* Desktop mockup */}
-              <div className="relative z-10">
-                <div className="w-80 h-48 bg-gradient-to-br from-gray-800 to-gray-900 rounded-t-lg p-1 shadow-2xl">
-                  <div className="w-full h-full bg-gradient-to-br from-[#08313B] to-[#0a3d4a] rounded-t-lg overflow-hidden">
-                    {/* Screen content */}
-                    <div className="p-4 space-y-3">
-                      <div className="flex items-center justify-between">
-                        <div className="flex space-x-1">
-                          <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                          <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                        </div>
-                        <div className="text-[#29D497] text-xs font-semibold">
-                          Manag+ Dashboard
-                        </div>
-                      </div>
-
-                      <div className="space-y-2">
-                        <div className="bg-white/10 rounded p-2">
-                          <div className="flex justify-between items-center">
-                            <span className="text-white text-xs">
-                              Ventes aujourd'hui
-                            </span>
-                            <span className="text-[#29D497] text-xs font-bold">
-                              245.000 FCFA
-                            </span>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-2">
-                          <div className="bg-white/5 rounded p-2 text-center">
-                            <div className="text-[#29D497] text-xs font-bold">
-                              12
-                            </div>
-                            <div className="text-white text-[10px]">
-                              Commandes
-                            </div>
-                          </div>
-                          <div className="bg-white/5 rounded p-2 text-center">
-                            <div className="text-[#29D497] text-xs font-bold">
-                              8
-                            </div>
-                            <div className="text-white text-[10px]">
-                              Réservations
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="bg-[#29D497]/20 rounded p-2">
-                          <div className="text-white text-xs">
-                            Prochaine réservation
-                          </div>
-                          <div className="text-[#29D497] text-[10px]">
-                            Table 5 - 19h30
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-80 h-4 bg-gradient-to-b from-gray-800 to-gray-700 rounded-b-lg shadow-lg"></div>
-              </div>
-
-              {/* Mobile mockup */}
-              <div className="absolute -right-8 top-8 z-20">
-                <div className="w-32 h-64 bg-gray-800 rounded-3xl p-1 shadow-2xl transform rotate-12 hover:rotate-6 transition-transform duration-500">
-                  <div className="w-full h-full bg-gradient-to-b from-[#08313B] to-[#0a3d4a] rounded-3xl overflow-hidden">
-                    <div className="p-3 space-y-3">
-                      <div className="text-center">
-                        <div className="w-6 h-6 bg-[#29D497] rounded-lg flex items-center justify-center mx-auto mb-2">
-                          <span className="text-white text-xs font-bold">
-                            M+
-                          </span>
-                        </div>
-                      </div>
-
-                      <div className="space-y-2">
-                        <div className="bg-white/10 rounded p-2 text-center">
-                          <div className="text-[#29D497] text-xs font-bold">
-                            145k
-                          </div>
-                          <div className="text-white text-[8px]">
-                            CA du jour
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-1">
-                          <div className="bg-white/5 rounded p-1 text-center">
-                            <Utensils className="w-3 h-3 text-[#29D497] mx-auto mb-1" />
-                            <div className="text-white text-[8px]">
-                              Restaurant
-                            </div>
-                          </div>
-                          <div className="bg-white/5 rounded p-1 text-center">
-                            <Coffee className="w-3 h-3 text-[#29D497] mx-auto mb-1" />
-                            <div className="text-white text-[8px]">Bar</div>
-                          </div>
-                        </div>
-
-                        <Button className="w-full bg-[#29D497] hover:bg-[#25c085] text-white py-1 text-[8px] rounded">
-                          Nouvelle commande
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="/mockup.png"
+                alt="Mockup"
+                width={3000}
+                height={3000}
+                className="w-[500px] h-[500px] object-contain"
+              />
 
               {/* Floating elements */}
               <div className="absolute -top-4 -left-8 bg-white p-3 rounded-xl shadow-lg animate-bounce">
