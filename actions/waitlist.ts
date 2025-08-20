@@ -32,6 +32,24 @@ export const addToWaitlist = async (data: WaitlistForm) => {
     };
   }
 
+  const verif = await prisma.waitlist.findUnique({
+    where: {
+      email: data.email,
+    },
+  });
+  if (verif?.phone === data.phone) {
+    return {
+      success: false,
+      error: "Vous avez deja inscrit votre numero de telephone",
+    };
+  }
+  if (verif) {
+    return {
+      success: false,
+      error: "Vous avez deja inscrit votre email",
+    };
+  }
+
   const waitlist = await prisma.waitlist.create({
     data: {
       name: data.name,
