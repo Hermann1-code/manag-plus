@@ -110,25 +110,25 @@ const ManagPlusLanding = () => {
 
   const benefits = [
     {
-      icon: <Clock className="w-6 h-6 text-[#29D497]" />,
+      icon: <Clock className="w-6 h-6 text-[#fff]" />,
       title: "Gain de temps",
       description:
         "Automatisez vos tâches répétitives et concentrez-vous sur l'essentiel.",
     },
     {
-      icon: <TrendingUp className="w-6 h-6 text-[#29D497]" />,
+      icon: <TrendingUp className="w-6 h-6 text-[#fff]" />,
       title: "Plus de visibilité",
       description:
         "Analysez vos performances en temps réel avec des données précises.",
     },
     {
-      icon: <DollarSign className="w-6 h-6 text-[#29D497]" />,
+      icon: <DollarSign className="w-6 h-6 text-[#fff]" />,
       title: "Optimisation des revenus",
       description:
         "Identifiez les opportunités d'amélioration et maximisez vos profits.",
     },
     {
-      icon: <Zap className="w-6 h-6 text-[#29D497]" />,
+      icon: <Zap className="w-6 h-6 text-[#fff]" />,
       title: "Simplicité d'usage",
       description:
         "Interface pensée pour le terrain, formation rapide de vos équipes.",
@@ -147,20 +147,20 @@ const ManagPlusLanding = () => {
           </div>
           <Button
             onClick={handleWaitlistSignup}
-            variant="secondary"
+            variant="default"
             className="text-white border-white/30 px-6 py-5  backdrop-blur-sm transition-all duration-300"
           >
-            Rejoindre la Liste d'Attente
+            S'inscrire
           </Button>
         </div>
       </nav>
 
       {/* 1. Hero Section */}
-      <section className="min-h-screen bg-[#08313B] text-white relative overflow-hidden flex items-center">
+      <section className="min-h-screen bg-[#1E2A38] text-white relative overflow-hidden flex items-center">
         {/* Background decorations */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#29D497]/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-[#29D497]/8 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#FF7043]/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-[#FF7043]/8 rounded-full blur-3xl"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
@@ -170,9 +170,9 @@ const ManagPlusLanding = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
                   Gérez votre établissement{" "}
-                  <span className="text-[#29D497] relative">
+                  <span className="text-[#FF7043] relative">
                     en toute simplicité
-                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-[#29D497]/30 rounded-full"></div>
+                    <div className="absolute -bottom-2 left-0 w-full h-1 bg-[#FF7043]/30 rounded-full"></div>
                   </span>
                 </h1>
 
@@ -186,29 +186,29 @@ const ManagPlusLanding = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   onClick={handleWaitlistSignup}
-                  className="bg-[#29D497] hover:bg-[#25c085] text-white px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                  className="bg-[#FF7043] hover:bg-[#25c085] text-white px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
                   Rejoindre la Liste d'Attente
                   <ArrowRight className="ml-3 w-5 h-5" />
                 </Button>
 
-                <Button
+                {/* <Button
                   variant="outline"
-                  className="border-2 border-[#29D497] text-[#29D497] hover:bg-[#29D497] hover:text-white px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-[#FF7043] text-[#FF7043] hover:bg-[#FF7043] hover:text-white px-10 py-6 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   Voir la démo
-                </Button>
+                </Button> */}
               </div>
 
               <div className="flex items-center space-x-8 pt-6">
                 <div className="flex items-center space-x-2">
-                  <CheckCircle className="w-5 h-5 text-[#29D497]" />
+                  <CheckCircle className="w-5 h-5 text-[#FF7043]" />
                   <span className="text-sm text-gray-400">
                     Accès prioritaire au lancement
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Shield className="w-5 h-5 text-[#29D497]" />
+                  <Shield className="w-5 h-5 text-[#FF7043]" />
                   <span className="text-sm text-gray-400">
                     Données sécurisées
                   </span>
@@ -229,9 +229,9 @@ const ManagPlusLanding = () => {
 
               {/* Floating elements */}
               <div className="absolute -top-4 -left-8 bg-white p-3 rounded-xl shadow-lg animate-bounce">
-                <TrendingUp className="w-6 h-6 text-[#29D497]" />
+                <TrendingUp className="w-6 h-6 text-[#FF7043]" />
               </div>
-              <div className="absolute -bottom-4 right-4 bg-[#29D497] p-3 rounded-xl shadow-lg animate-pulse">
+              <div className="absolute -bottom-4 right-4 bg-[#FF7043] p-3 rounded-xl shadow-lg animate-pulse">
                 <Star className="w-6 h-6 text-white" />
               </div>
             </div>
@@ -250,7 +250,7 @@ const ManagPlusLanding = () => {
                   ❌ Le Problème
                 </span>
               </div>
-              <h2 className="text-4xl font-bold text-[#08313B]">
+              <h2 className="text-4xl font-bold text-[#1E2A38]">
                 Les établissements perdent du temps entre la gestion des ventes,
                 des stocks et des clients.
               </h2>
@@ -283,29 +283,29 @@ const ManagPlusLanding = () => {
                   ✅ La Solution
                 </span>
               </div>
-              <h2 className="text-4xl font-bold text-[#08313B]">
+              <h2 className="text-4xl font-bold text-[#1E2A38]">
                 Avec Manag+, vous pilotez tout depuis une seule plateforme.
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-[#29D497] mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#FF7043] mt-1 flex-shrink-0" />
                   <span>
                     Interface unique pour toutes vos opérations quotidiennes
                   </span>
                 </p>
                 <p className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-[#29D497] mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#FF7043] mt-1 flex-shrink-0" />
                   <span>
                     Tableaux de bord en temps réel pour prendre les bonnes
                     décisions
                   </span>
                 </p>
                 <p className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-[#29D497] mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#FF7043] mt-1 flex-shrink-0" />
                   <span>Calculs automatiques et rapports précis</span>
                 </p>
                 <p className="flex items-start space-x-3">
-                  <CheckCircle className="w-5 h-5 text-[#29D497] mt-1 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-[#FF7043] mt-1 flex-shrink-0" />
                   <span>
                     Analyses prédictives pour optimiser votre rentabilité
                   </span>
@@ -314,7 +314,7 @@ const ManagPlusLanding = () => {
 
               <Button
                 onClick={handleWaitlistSignup}
-                className="bg-[#29D497] hover:bg-[#25c085] text-white px-8 py-4 font-semibold rounded-xl transition-all duration-300"
+                className="bg-[#FF7043] hover:bg-[#25c085] text-white px-8 py-4 font-semibold rounded-xl transition-all duration-300"
               >
                 Rejoindre la Liste d'Attente
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -328,7 +328,7 @@ const ManagPlusLanding = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#08313B] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1E2A38] mb-6">
               Tout ce dont vous avez besoin dans une seule app
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -344,10 +344,10 @@ const ManagPlusLanding = () => {
                 className="group hover:shadow-xl transition-all duration-500 border-0 shadow-lg hover:-translate-y-2"
               >
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#29D497] to-[#25c085] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-[#FF7043] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     {feature.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-[#08313B] mb-4">
+                  <h3 className="text-xl font-bold text-[#1E2A38] mb-4">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm">
@@ -364,7 +364,7 @@ const ManagPlusLanding = () => {
       <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#08313B] mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1E2A38] mb-6">
               Pourquoi choisir Manag+ ?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -377,11 +377,11 @@ const ManagPlusLanding = () => {
             <div className="space-y-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-4 group">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#29D497]/10 to-[#25c085]/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-12 h-12 bg-[#FF7043] rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     {benefit.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-[#08313B] mb-2">
+                    <h3 className="text-xl font-bold text-[#1E2A38] mb-2">
                       {benefit.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
@@ -395,7 +395,7 @@ const ManagPlusLanding = () => {
             <div className="relative">
               {/* Stats visualization */}
               <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100">
-                <h3 className="text-2xl font-bold text-[#08313B] mb-6 text-center">
+                <h3 className="text-2xl font-bold text-[#1E2A38] mb-6 text-center">
                   Impact sur votre établissement
                 </h3>
 
@@ -404,36 +404,36 @@ const ManagPlusLanding = () => {
                     <span className="text-gray-600">
                       Temps économisé par jour
                     </span>
-                    <span className="text-2xl font-bold text-[#29D497]">
+                    <span className="text-2xl font-bold text-[#FF7043]">
                       3h
                     </span>
                   </div>
 
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Augmentation du CA</span>
-                    <span className="text-2xl font-bold text-[#29D497]">
+                    <span className="text-2xl font-bold text-[#FF7043]">
                       +25%
                     </span>
                   </div>
 
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Réduction des erreurs</span>
-                    <span className="text-2xl font-bold text-[#29D497]">
+                    <span className="text-2xl font-bold text-[#FF7043]">
                       -80%
                     </span>
                   </div>
 
                   <div className="flex justify-between items-center">
                     <span className="text-gray-600">Satisfaction client</span>
-                    <span className="text-2xl font-bold text-[#29D497]">
+                    <span className="text-2xl font-bold text-[#FF7043]">
                       +40%
                     </span>
                   </div>
                 </div>
 
-                <div className="mt-8 p-4 bg-gradient-to-r from-[#29D497]/10 to-[#25c085]/10 rounded-xl">
+                <div className="mt-8 p-4 bg-[#FF7043]/10 rounded-xl">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-[#29D497] mb-2">
+                    <div className="text-3xl font-bold text-[#FF7043] mb-2">
                       ROI
                     </div>
                     <div className="text-sm text-gray-600">
@@ -448,7 +448,7 @@ const ManagPlusLanding = () => {
       </section>
 
       {/* <div className="my-12 text-center">
-        <div className="bg-gradient-to-r from-[#08313B] to-[#0a3d4a] rounded-2xl p-8 border border-gray-800">
+        <div className="bg-gradient-to-r from-[#1E2A38] to-[#0a3d4a] rounded-2xl p-8 border border-gray-800">
           <h3 className="text-2xl font-bold mb-4">
             Prêt à révolutionner votre établissement ?
           </h3>
@@ -458,7 +458,7 @@ const ManagPlusLanding = () => {
           </p>
           <Button
             onClick={handleWaitlistSignup}
-            className="bg-[#29D497] hover:bg-[#25c085] text-white px-10 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
+            className="bg-[#FF7043] hover:bg-[#25c085] text-white px-10 py-4 text-lg font-semibold rounded-xl transition-all duration-300 transform hover:scale-105"
           >
             Rejoindre la Liste d'Attente
             <ArrowRight className="ml-3 w-5 h-5" />
@@ -467,17 +467,17 @@ const ManagPlusLanding = () => {
       </div> */}
 
       {/* 5. Section Liste d'Attente */}
-      <section className="py-24 bg-[#08313B] text-white relative overflow-hidden">
+      <section className="py-24 bg-[#1E2A38] text-white relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-[#29D497]/10 to-transparent rounded-full"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-[#FF7043]/10 to-transparent rounded-full"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center px-6 py-3 bg-[#29D497]/20 border border-[#29D497]/30 rounded-full">
-              <Zap className="w-5 h-5 text-[#29D497] mr-2" />
-              <span className="text-[#29D497] font-semibold">
+            <div className="inline-flex items-center px-6 py-3 bg-[#FF7043]/20 border border-[#FF7043]/30 rounded-full">
+              <Zap className="w-5 h-5 text-[#FF7043] mr-2" />
+              <span className="text-[#FF7043] font-semibold">
                 Lancement Imminent
               </span>
             </div>
@@ -495,7 +495,7 @@ const ManagPlusLanding = () => {
 
             <div className="grid md:grid-cols-3 gap-6 my-12">
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="w-12 h-12 bg-[#29D497] rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-[#FF7043] rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold">1</span>
                 </div>
                 <h3 className="font-semibold mb-2">Inscription simple</h3>
@@ -505,7 +505,7 @@ const ManagPlusLanding = () => {
               </div>
 
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="w-12 h-12 bg-[#29D497] rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-[#FF7043] rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold">2</span>
                 </div>
                 <h3 className="font-semibold mb-2">Accès prioritaire</h3>
@@ -515,7 +515,7 @@ const ManagPlusLanding = () => {
               </div>
 
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
-                <div className="w-12 h-12 bg-[#29D497] rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-[#FF7043] rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold">3</span>
                 </div>
                 <h3 className="font-semibold mb-2">Offres exclusives</h3>
@@ -529,15 +529,15 @@ const ManagPlusLanding = () => {
               {!isSubmitted ? (
                 <Button
                   onClick={handleWaitlistSignup}
-                  className="bg-[#29D497] hover:bg-[#25c085] text-white px-12 py-6 text-xl font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                  // className="bg-[#FF7043] hover:bg-[#25c085] text-white px-12 py-6 text-xl font-semibold rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
                   Rejoindre la Liste d'Attente
                   <ArrowRight className="ml-3 w-6 h-6" />
                 </Button>
               ) : (
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-[#29D497]/30">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-[#FF7043]/30">
                   <div className="flex items-center justify-center space-x-3">
-                    <CheckCircle className="w-6 h-6 text-[#29D497]" />
+                    <CheckCircle className="w-6 h-6 text-[#FF7043]" />
                     <span className="text-lg font-semibold">
                       Vous êtes inscrit à la liste d'attente !
                     </span>
@@ -561,7 +561,7 @@ const ManagPlusLanding = () => {
       >
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#08313B] mb-4">
+            <h2 className="text-4xl font-bold text-[#1E2A38] mb-4">
               Inscrivez-vous à la liste d'attente
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -577,7 +577,7 @@ const ManagPlusLanding = () => {
                   {/* Informations personnelles */}
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                      <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                         <User className="w-4 h-4 inline mr-2" />
                         Nom complet *
                       </label>
@@ -587,12 +587,12 @@ const ManagPlusLanding = () => {
                         required
                         value={formData.name}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                         placeholder="Votre nom complet"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                      <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                         <Mail className="w-4 h-4 inline mr-2" />
                         Email *
                       </label>
@@ -602,7 +602,7 @@ const ManagPlusLanding = () => {
                         required
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                         placeholder="votre@email.com"
                       />
                     </div>
@@ -611,7 +611,7 @@ const ManagPlusLanding = () => {
                   {/* Informations établissement */}
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                      <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                         <Home className="w-4 h-4 inline mr-2" />
                         Nom de l'établissement *
                       </label>
@@ -621,12 +621,12 @@ const ManagPlusLanding = () => {
                         required
                         value={formData.establishmentName}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                         placeholder="Restaurant Le Palmier"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                      <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                         <Coffee className="w-4 h-4 inline mr-2" />
                         Type d'établissement *
                       </label>
@@ -637,7 +637,7 @@ const ManagPlusLanding = () => {
                         onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
                           handleInputChange(e)
                         }
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                       >
                         <option value="">Sélectionner...</option>
                         <option value={EstablishmentType.RESTAURANT}>
@@ -652,7 +652,7 @@ const ManagPlusLanding = () => {
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                      <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                         <MapPin className="w-4 h-4 inline mr-2" />
                         Localisation *
                       </label>
@@ -662,12 +662,12 @@ const ManagPlusLanding = () => {
                         required
                         value={formData.establishmentLocation}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                         placeholder="Abidjan, Cocody"
                       />
                     </div>
                     <div>
-                      <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                      <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                         <Phone className="w-4 h-4 inline mr-2" />
                         Téléphone *
                       </label>
@@ -677,24 +677,24 @@ const ManagPlusLanding = () => {
                         required
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                        className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                         placeholder="+225 XX XX XX XX XX"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-[#08313B] mb-2">
+                    <label className="block text-sm font-semibold text-[#1E2A38] mb-2">
                       <Users className="w-4 h-4 inline mr-2" />
                       Nombre d'employés
                     </label>
                     <select
-                      name="employees"
+                      name="establishmentEmployees"
                       value={formData.establishmentEmployees}
                       onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
                         handleInputChange(e)
                       }
-                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#29D497] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-[#FF7043] focus:border-transparent transition-all duration-300"
                     >
                       <option value="">Sélectionner...</option>
                       <option value={EstablishmentEmployees.SMALL}>
@@ -712,7 +712,7 @@ const ManagPlusLanding = () => {
 
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <div className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 text-[#29D497] mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-5 h-5 text-[#FF7043] mt-0.5 flex-shrink-0" />
                       <div className="text-sm text-gray-600">
                         En vous inscrivant, vous acceptez de recevoir des
                         informations sur Manag+ et bénéficierez d'un accès
@@ -724,7 +724,7 @@ const ManagPlusLanding = () => {
                   <Button
                     type="submit"
                     disabled={isLoading}
-                    variant="secondary"
+                    // variant="secondary"
                     className="w-full"
                   >
                     {isLoading ? (
@@ -742,11 +742,11 @@ const ManagPlusLanding = () => {
                 </form>
               ) : (
                 <div className="text-center space-y-6">
-                  <div className="w-20 h-20 bg-[#29D497] rounded-full flex items-center justify-center mx-auto">
+                  <div className="w-20 h-20 bg-[#FF7043] rounded-full flex items-center justify-center mx-auto">
                     <CheckCircle className="w-10 h-10 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-[#08313B] mb-2">
+                    <h3 className="text-2xl font-bold text-[#1E2A38] mb-2">
                       Félicitations ! Vous êtes inscrit !
                     </h3>
                     <p className="text-gray-600 leading-relaxed">
@@ -758,23 +758,23 @@ const ManagPlusLanding = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gradient-to-r from-[#29D497]/10 to-[#25c085]/10 rounded-xl p-6">
-                    <h4 className="font-semibold text-[#08313B] mb-3">
+                  <div className="bg-gradient-to-r from-[#FF7043]/10 to-[#25c085]/10 rounded-xl p-6">
+                    <h4 className="font-semibold text-[#1E2A38] mb-3">
                       Prochaines étapes :
                     </h4>
                     <div className="space-y-2 text-sm text-gray-600 text-left">
                       <div className="flex items-center space-x-3">
-                        <CheckCircle className="w-4 h-4 text-[#29D497] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-[#FF7043] flex-shrink-0" />
                         <span>Email de confirmation envoyé</span>
                       </div>
                       <div className="flex items-center space-x-3">
-                        <CheckCircle className="w-4 h-4 text-[#29D497] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-[#FF7043] flex-shrink-0" />
                         <span>
                           Accès prioritaire au lancement (Septembre 2025)
                         </span>
                       </div>
                       <div className="flex items-center space-x-3">
-                        <CheckCircle className="w-4 h-4 text-[#29D497] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-[#FF7043] flex-shrink-0" />
                         <span>
                           Offres exclusives réservées aux early adopters
                         </span>
@@ -805,7 +805,7 @@ const ManagPlusLanding = () => {
               <div className="flex space-x-4 pt-4">
                 <Button
                   onClick={handleWaitlistSignup}
-                  className="bg-[#29D497] hover:bg-[#25c085] text-white font-semibold rounded-lg"
+                  className="bg-[#FF7043] hover:bg-[#25c085] text-white font-semibold rounded-lg"
                 >
                   Rejoindre la Liste d'Attente
                 </Button>
@@ -817,12 +817,12 @@ const ManagPlusLanding = () => {
               <h3 className="font-semibold text-lg mb-4">Contact</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-[#29D497]" />
-                  <span className="text-sm">contact@managplus.com</span>
+                  <Mail className="w-4 h-4 text-[#FF7043]" />
+                  <span className="text-sm">contact@managplus.online</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Globe className="w-4 h-4 text-[#29D497]" />
-                  <span className="text-sm">www.managplus.com</span>
+                  <Globe className="w-4 h-4 text-[#FF7043]" />
+                  <span className="text-sm">www.managplus.online</span>
                 </div>
               </div>
             </div>
@@ -857,15 +857,18 @@ const ManagPlusLanding = () => {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex space-x-6 text-sm text-gray-400">
-                <a href="#" className="hover:text-white transition-colors">
+                {/* <a href="#" className="hover:text-white transition-colors">
                   Mentions légales
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
+                </a> */}
+                <a
+                  href="/privacy"
+                  className="hover:text-white transition-colors"
+                >
                   Politique de confidentialité
                 </a>
-                <a href="#" className="hover:text-white transition-colors">
+                {/* <a href="#" className="hover:text-white transition-colors">
                   Conditions d'utilisation
-                </a>
+                </a> */}
               </div>
 
               <div className="text-sm text-gray-400">

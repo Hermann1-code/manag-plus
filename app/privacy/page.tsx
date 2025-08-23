@@ -1,3 +1,4 @@
+import PrivacyPolicyPage from "@/components/policy";
 import React from "react";
 
 export const metadata = {
@@ -55,5 +56,5 @@ export const metadata = {
 };
 
 export default function page() {
-  return <div>page</div>;
+  return <PrivacyPolicyPage />;
 }

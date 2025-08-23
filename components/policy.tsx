@@ -17,18 +17,21 @@ import {
   Calendar,
   Phone,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const PrivacyPolicyPage = () => {
+  const router = useRouter();
+
   const handleBackToHome = () => {
     // En réalité, ceci devrait naviguer vers la page d'accueil
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    router.back();
   };
 
   const sections = [
     {
       id: "collecte",
       title: "1. Collecte des Informations",
-      icon: <UserCheck className="w-6 h-6 text-[#29D497]" />,
+      icon: <UserCheck className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           subtitle: "Informations que nous collectons",
@@ -58,7 +61,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "utilisation",
       title: "2. Utilisation des Informations",
-      icon: <Eye className="w-6 h-6 text-[#29D497]" />,
+      icon: <Eye className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "Nous utilisons vos informations personnelles pour :",
@@ -90,7 +93,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "partage",
       title: "3. Partage des Informations",
-      icon: <Globe className="w-6 h-6 text-[#29D497]" />,
+      icon: <Globe className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "Nous ne vendons jamais vos données personnelles. Nous pouvons partager vos informations uniquement dans les cas suivants :",
@@ -120,7 +123,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "securite",
       title: "4. Sécurité des Données",
-      icon: <Lock className="w-6 h-6 text-[#29D497]" />,
+      icon: <Lock className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "La sécurité de vos données est notre priorité absolue. Nous mettons en œuvre :",
@@ -144,7 +147,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "droits",
       title: "5. Vos Droits",
-      icon: <Shield className="w-6 h-6 text-[#29D497]" />,
+      icon: <Shield className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "Conformément aux lois sur la protection des données, vous disposez des droits suivants :",
@@ -168,7 +171,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "retention",
       title: "6. Conservation des Données",
-      icon: <Calendar className="w-6 h-6 text-[#29D497]" />,
+      icon: <Calendar className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "Nous conservons vos données personnelles uniquement le temps nécessaire :",
@@ -191,7 +194,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "cookies",
       title: "7. Cookies et Technologies Similaires",
-      icon: <FileText className="w-6 h-6 text-[#29D497]" />,
+      icon: <FileText className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "Nous utilisons des cookies pour améliorer votre expérience :",
@@ -213,7 +216,7 @@ const PrivacyPolicyPage = () => {
     {
       id: "modifications",
       title: "8. Modifications de cette Politique",
-      icon: <AlertTriangle className="w-6 h-6 text-[#29D497]" />,
+      icon: <AlertTriangle className="w-6 h-6 text-[#fff]" />,
       content: [
         {
           text: "Nous pouvons mettre à jour cette politique de confidentialité pour refléter :",
@@ -237,7 +240,7 @@ const PrivacyPolicyPage = () => {
   return (
     <div className="min-h-screen bg-white font-sans antialiased">
       {/* Header */}
-      <header className="bg-[#08313B] text-white py-8">
+      <header className="bg-[#1E2A38] text-white py-8">
         <div className="max-w-4xl mx-auto px-6">
           <Button
             onClick={handleBackToHome}
@@ -249,7 +252,7 @@ const PrivacyPolicyPage = () => {
           </Button>
 
           <div className="flex items-center space-x-4 mb-6">
-            <div className="w-12 h-12 bg-[#29D497] rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-[#FF7043] rounded-lg flex items-center justify-center">
               <Shield className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -277,7 +280,7 @@ const PrivacyPolicyPage = () => {
       <nav className="bg-gray-50 py-4 sticky top-0 z-40 border-b">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex items-center space-x-1 overflow-x-auto">
-            <span className="text-sm font-semibold text-[#08313B] mr-4 whitespace-nowrap">
+            <span className="text-sm font-semibold text-[#1E2A38] mr-4 whitespace-nowrap">
               Navigation rapide :
             </span>
             {sections.map((section, index) => (
@@ -290,7 +293,7 @@ const PrivacyPolicyPage = () => {
                     .getElementById(section.id)
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="text-sm text-gray-600 hover:text-[#29D497] hover:bg-[#29D497]/10 whitespace-nowrap"
+                className="text-sm text-gray-600 hover:text-[#FF7043] hover:bg-[#FF7043]/10 whitespace-nowrap"
               >
                 {index + 1}. {section.title.split(". ")[1]}
               </Button>
@@ -302,12 +305,12 @@ const PrivacyPolicyPage = () => {
       {/* Contenu principal */}
       <main className="max-w-4xl mx-auto px-6 py-12">
         {/* Introduction importante */}
-        <Card className="mb-12 border-l-4 border-l-[#29D497] shadow-lg">
+        <Card className="mb-12 border-l-4 border-l-[#FF7043] shadow-lg">
           <CardContent className="p-8">
             <div className="flex items-start space-x-4">
-              <CheckCircle className="w-8 h-8 text-[#29D497] flex-shrink-0 mt-1" />
+              <CheckCircle className="w-8 h-8 text-[#FF7043] flex-shrink-0 mt-1" />
               <div>
-                <h2 className="text-2xl font-bold text-[#08313B] mb-4">
+                <h2 className="text-2xl font-bold text-[#1E2A38] mb-4">
                   Notre Engagement
                 </h2>
                 <div className="space-y-4 text-gray-700">
@@ -356,10 +359,10 @@ const PrivacyPolicyPage = () => {
               <Card className="shadow-lg border-0 hover:shadow-xl transition-shadow duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#29D497] to-[#25c085] rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-[#FF7043] rounded-lg flex items-center justify-center">
                       {section.icon}
                     </div>
-                    <h2 className="text-2xl font-bold text-[#08313B]">
+                    <h2 className="text-2xl font-bold text-[#1E2A38]">
                       {section.title}
                     </h2>
                   </div>
@@ -368,7 +371,7 @@ const PrivacyPolicyPage = () => {
                     {section.content.map((item, itemIndex) => (
                       <div key={itemIndex}>
                         {item.subtitle && (
-                          <h3 className="text-lg font-semibold text-[#08313B] mb-3">
+                          <h3 className="text-lg font-semibold text-[#1E2A38] mb-3">
                             {item.subtitle}
                           </h3>
                         )}
@@ -384,7 +387,7 @@ const PrivacyPolicyPage = () => {
                                 key={listIndex}
                                 className="flex items-start space-x-3"
                               >
-                                <CheckCircle className="w-4 h-4 text-[#29D497] flex-shrink-0 mt-0.5" />
+                                <CheckCircle className="w-4 h-4 text-[#FF7043] flex-shrink-0 mt-0.5" />
                                 <span className="text-gray-700">
                                   {listItem}
                                 </span>
@@ -402,10 +405,10 @@ const PrivacyPolicyPage = () => {
         </div>
 
         {/* Contact et support */}
-        <Card className="mt-16 bg-gradient-to-br from-[#08313B] to-[#0a3d4a] text-white shadow-2xl">
+        <Card className="mt-16 bg-gradient-to-br from-[#1E2A38] to-[#0a3d4a] text-white shadow-2xl">
           <CardContent className="p-8">
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-[#29D497] rounded-full flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 bg-[#FF7043] rounded-full flex items-center justify-center mx-auto">
                 <Mail className="w-8 h-8 text-white" />
               </div>
 
@@ -422,27 +425,29 @@ const PrivacyPolicyPage = () => {
 
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <Mail className="w-8 h-8 text-[#29D497] mx-auto mb-4" />
+                  <Mail className="w-8 h-8 text-[#FF7043] mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-sm text-gray-300">privacy@managplus.ci</p>
+                  <p className="text-sm text-gray-300">
+                    privacy@managplus.online
+                  </p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <Phone className="w-8 h-8 text-[#29D497] mx-auto mb-4" />
+                  <Phone className="w-8 h-8 text-[#FF7043] mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Support</h3>
-                  <p className="text-sm text-gray-300">+225 XX XX XX XX XX</p>
+                  <p className="text-sm text-gray-300">+225 0767628646</p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <Globe className="w-8 h-8 text-[#29D497] mx-auto mb-4" />
+                  <Globe className="w-8 h-8 text-[#FF7043] mx-auto mb-4" />
                   <h3 className="font-semibold mb-2">Site Web</h3>
-                  <p className="text-sm text-gray-300">www.managplus.ci</p>
+                  <p className="text-sm text-gray-300">www.managplus.online</p>
                 </div>
               </div>
 
               <Button
                 onClick={handleBackToHome}
-                className="bg-[#29D497] hover:bg-[#25c085] text-white px-8 py-3 font-semibold rounded-xl transition-all duration-300"
+                className="bg-[#FF7043] text-white px-8 py-3 font-semibold rounded-xl transition-all duration-300"
               >
                 Retour à l'accueil
                 <ArrowLeft className="ml-2 w-4 h-4 rotate-180" />
@@ -456,13 +461,13 @@ const PrivacyPolicyPage = () => {
       <footer className="bg-gray-900 text-white py-8 mt-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-8 h-8 bg-[#29D497] rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-[#FF7043] rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">M+</span>
             </div>
             <span className="text-lg font-bold">Manag+</span>
           </div>
           <p className="text-gray-400 text-sm">
-            © 2024 Manag+. Tous droits réservés. Made in Côte d'Ivoire 🇨🇮
+            © 2025 Manag+. Tous droits réservés. Made in Côte d'Ivoire 🇨🇮
           </p>
         </div>
       </footer>
